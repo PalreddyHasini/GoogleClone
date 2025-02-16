@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Google</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(bg.png);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center {
+            width: 60%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .inp-grp i {
+            color: black;
+            font-size: 20px;
+            margin: 0px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inp-grp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            border-radius: 25px;
+            width: 80%;
+        }
+
+        .text-field {
+            font-size: 20px;
+            outline: none;
+            border: none;
+            padding: 10px;
+            width: 600px;
+        }
+
+        .fav-card {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .fav-card p {
+            color: black;
+        }
+
+        .fav-card:hover {
+            background-color: rgba(255, 255, 255, 0.619);
+
+            .dots {
+                opacity: 1;
+            }
+        }
+
+        .circle {
+            width: 60%;
+            height: 60%;
+            border-radius: 50%;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .insta {
+            width: 100%;
+            border-radius: 50px;
+        }
+
+        .fav-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .dots {
+            font-size: 20px;
+            position: relative;
+            left: 50px;
+            color: black;
+            opacity: 0;
+            transition: 0.5s all ease;
+        }
+
+        .top-right {
+            width: 200px;
+            height: 50px;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .grid{
+            width: 6px;
+        }
+        .dotts{
+            display: flex;
+        }
+        .moon{
+            width: 40px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="center">
+            <img src="google.png" alt="Google" width="60%" style="margin-bottom: 30px;">
+            <div class="inp-grp">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <form action="https://google.com/search">
+                    <input type="text" class="text-field" placeholder="Search Google or type a URL" name="q">
+                </form>
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-camera"></i>
+            </div>
+
+            <div class="fav-list">
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="insta.png" class="insta" alt="Insta">
+                    </div>
+                    <p>Instagram</p>
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="insta.png" class="insta" alt="Insta">
+                    </div>
+                    <p>Instagram</p>
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="insta.png" class="insta" alt="Insta">
+                    </div>
+                    <p>Instagram</p>
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="insta.png" class="insta" alt="Insta">
+                    </div>
+                    <p>Instagram</p>
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="insta.png" class="insta" alt="Insta">
+                    </div>
+                    <p>Instagram</p>
+                </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                        <img src="insta.png" class="insta" alt="Insta">
+                    </div>
+                    <p>Instagram</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-right">
+        <p>Gmail</p>
+        <p>Images</p>
+        <div class="dotts">
+            <i class="fa-solid fa-ellipsis-vertical grid"></i>
+            <i class="fa-solid fa-ellipsis-vertical grid"></i>
+            <i class="fa-solid fa-ellipsis-vertical grid"></i>
+        </div>
+        <img src="moon.png" alt="cool" class="moon">
+    </div>
+</body>
+
+</html>
